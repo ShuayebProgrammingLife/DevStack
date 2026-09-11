@@ -1,13 +1,13 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-// import TechCard from './components/TechCard'
+import TechGrid from './components/TechGrid'
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      {/* <TechCard /> */}
+      {/* <TechGrid /> */}
     </>
   )
 }
