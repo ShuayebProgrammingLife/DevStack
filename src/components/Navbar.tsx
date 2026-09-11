@@ -1,4 +1,4 @@
-import { use, useState } from "react";;
+import {  useState } from "react";;
 const NAV_LINKS = ['Home', 'Technologies', 'Projects', 'About', 'Contact'];
 
 function Logo() {
