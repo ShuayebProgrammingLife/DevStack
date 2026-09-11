@@ -25,7 +25,7 @@ export default function Hero(){
 
              <a
               href="#about"
-              className="rounded-full border border-state-200 px-6 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-state-300 hover:bg-slate-50"
+              className="rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-state-300 hover:bg-slate-50"
               >
                 Learn More
              </a>
