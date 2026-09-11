@@ -8,7 +8,8 @@ interface TechCardProps {
 
 export default function TechCard({ tech, isAdded, onAdd }: TechCardProps) {
   return (
-    <div className="flex flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow-card">
+    <div className={`flex flex-col rounded-2xl border bg-white p-5 shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover-z-10 relative ${isAdded ? 'border-emerald-300' : 'border-slate-100'
+      }`}>
       <div className="mb-4 flex items-start justify-between">
         <img
           src={tech.icon}
