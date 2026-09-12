@@ -1,5 +1,24 @@
 import type { Technology } from "../types/technology";
 
+const BADGE_COLORS: Record<string, string> = {
+  Popular: 'bg-sky-50 text-sky-600',
+  Versatile: 'bg-emerald-50 text-emerald-600',
+  Fast: 'bg-amber-50 text-amber-600',
+  Standard: 'bg-slate-100 text-slate-600',
+  Cache: 'bg-rose-50 text-rose-600',
+  Flexible: 'bg-teal-50 text-teal-600',
+  Ubiquitous: 'bg-yellow-50 text-yellow-700',
+  Essential: 'bg-indigo-50 text-indigo-600',
+  Robust: 'bg-orange-50 text-orange-600',
+  Modern: 'bg-cyan-50 text-cyan-600',
+  Containers: 'bg-blue-50 text-blue-600',
+  'Top SQL': 'bg-sky-50 text-sky-700',
+}
+
+function getBadgeColor(badge: string) {
+  return BADGE_COLORS[badge] ?? 'bg-slate-50 text-slate-600'
+}
+
 interface TechCardProps {
   tech: Technology,
   isAdded: boolean,
@@ -17,7 +36,7 @@ export default function TechCard({ tech, isAdded, onAdd }: TechCardProps) {
           className="h-9 w-9 object-contain"
           loading="lazy">
         </img>
-        <span className="rounded-full bg-slate-50 px-3 py-1 text-xs font-medium text-slate-600">
+        <span className={`rounded-full px-3 py-1 text-xs font-medium ${getBadgeColor(tech.badge)}`}>
           {tech.badge}
         </span>
       </div>
