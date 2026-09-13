@@ -28,13 +28,13 @@ export default function Footer(){
             </p>
 
             <div className="mt-4 flex gap-4 text-sm font-medium text-slate-600">
-              <a href="https://github.com" className="hover:text-slate-900">
+              <a href="https://github.com/ShuayebProgrammingLife" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900">
                 GitHub
               </a>
-              <a href="https://twitter.com" className="hover:text-slate-900">
+              <a href="https://x.com/ShuayebHossain1" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900">
                 Twitter
               </a>
-              <a href="https://linkedin.com" className="hover:text-slate-900">
+              <a href="https://www.linkedin.com/in/shuayeb-hossain-3329b03ab/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900">
                 Linkedin
               </a>
             </div>
